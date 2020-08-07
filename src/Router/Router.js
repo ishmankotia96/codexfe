@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
+import Contact from '../Pages/Contact';
 
 export default class AppRouter extends Component {
     constructor(props) {
@@ -12,7 +13,8 @@ export default class AppRouter extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route path={"/"} component={Home} />
+                    <Route exact path={"/"} component={Home} />
+                    <Route path={"/contact"} component={Contact} />
                 </Switch>
             </Router>
         )
