@@ -1,16 +1,14 @@
 import React from 'react'
 import logo from '../logo.svg';
-import '../Styles/App.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import '../Styles/App.css';
+import '../Styles/home.css';
 
 function Home(props) {
     return (
-        <div className="App">
+        <div className="App-header">
             <Header />
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-            </header>
             <Footer />
         </div>
     )
