@@ -1,10 +1,15 @@
 import React from 'react'
 
+
+function sup() {
+  alert("Hi! What's up?")
+}
+
 function Contact() {
     return (
-        <div>
+        <button style={{color: "red"}} onClick={sup}>
             Hi
-        </div>
+        </button>
     )
 }
 
